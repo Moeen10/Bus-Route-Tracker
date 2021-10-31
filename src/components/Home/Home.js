@@ -2,8 +2,14 @@ import React from 'react';
 import './Home.css';
 import { Button, TextField } from '@mui/material';
 import { useState, useEffect } from 'react';
+import busdata from './bus_data.json'
+import BusCard from './BusCard'
 
 const Home = () => {
+    let all_bus_info = [];
+    for (let i = 0; i < busdata.length; i++) {
+        all_bus_info.push(<BusCard name={busdata[i].name} image={busdata[i].url} route={busdata[i].route} service={busdata[i].service} fair={busdata[i].baseFair} />);
+    }
     let all_location = ['mirpur', 'kallanpur', 'dhanmandi', 'college gate', 'motijhil']
     let all = []
     for (let i = 0; i < all_location.length; i++) {
@@ -106,8 +112,11 @@ const Home = () => {
                     </div>
                 </div >
             </div>
-            <br /><br /><br />
-            <h1>No bus available right now</h1>
+            <br />
+            <h1>All Buses</h1><br />
+            <div className='container'>
+                {all_bus_info}
+            </div>
         </>
     );
 };

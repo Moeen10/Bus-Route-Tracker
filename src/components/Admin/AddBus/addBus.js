@@ -25,7 +25,7 @@ export default function AddBus() {
                         <TextField id="filled-basic" label="Bus Base Fair" variant="filled" name='bus_base_fair' type='number' fullWidth required />
                         <br /><br />
                         <div className='col-6 inputCard'>
-                            Select Bus Service:<hr />
+                            Select Bus Service<hr />
                             <RadioGroup
                                 aria-label="bus_service"
                                 defaultValue="Sitting"
@@ -37,7 +37,7 @@ export default function AddBus() {
                         </div>
 
                         <div className='col-6 inputCard'>
-                            Select Bus Type:<hr />
+                            Select Bus Type<hr />
                             <RadioGroup
                                 aria-label="bus_type"
                                 defaultValue="AC"
@@ -48,7 +48,7 @@ export default function AddBus() {
                             </RadioGroup>
                         </div>
                         <div className='col-6 inputCard'>
-                            Half/Pass accepted:<hr />
+                            Half/Pass accepted<hr />
                             <RadioGroup
                                 aria-label="half_pass"
                                 defaultValue="Yes"
@@ -64,11 +64,15 @@ export default function AddBus() {
                             <PassAmount flag={half_pass} />
                         </div>
 
+                        <div className='col-12 inputCard' style={{ float: 'left' }}>
+                            Upload a bus picture<hr />
+                            <input className="form-control" type="file" id="formFile" />
+                        </div>
+
                         <div className='col-12' style={{ float: 'left' }}>
                             <br />
                             <Button startIcon={<AddBoxIcon />} size='large' variant='contained' type='submit' fullWidth>ADD BUS</Button>
                         </div>
-
                     </form>
                 </center>
             </Container>

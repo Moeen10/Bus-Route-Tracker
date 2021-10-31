@@ -4,8 +4,9 @@ export default function PassAmount(props) {
     let val = props.flag
     if (val === 'No') {
         return (
-            <div>
-
+            <div style={{ opacity: 0.4 }}>
+                Half/Pass Amount:<hr />
+                <h3>Not Applicable</h3>
             </div>
         )
     }
@@ -13,7 +14,7 @@ export default function PassAmount(props) {
         return (
             <div>
                 Half/Pass Amount:<hr />
-                Select half/pass amount from below.
+                Select half/pass amount:
                 <select name='half_pass_amount' className='select_btn'>
                     <option>10%</option>
                     <option>25%</option>
