@@ -57,11 +57,13 @@ export default function MenuAppBar() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            
-          <Link to="/home"><Button variant="primary">Home</Button>{' '}</Link>
-          <Link to="/bus"><Button variant="primary">Buses</Button>{' '}</Link>
-          <Link to="/profile"><Button variant="primary">Profile</Button>{' '}</Link>
+
+            <Link to="/home"><Button variant="primary">Home</Button>{' '}</Link>
+            <Link to="/bus"><Button variant="primary">Buses</Button>{' '}</Link>
+            <Link to="/profile"><Button variant="primary">Profile</Button>{' '}</Link>
             <Link to="/login"><Button variant="primary">Login</Button>{' '}</Link>
+            <Link to="/admin/addBus"><Button variant="primary">Add Bus</Button>{' '}</Link>
+            <Link to="/payment"><Button variant="primary">Payment</Button>{' '}</Link>
           </Typography>
           {auth && (
             <div>
@@ -74,7 +76,7 @@ export default function MenuAppBar() {
                 color="inherit"
               >
                 <AccountCircle />
-                
+
               </IconButton>
               <Menu
                 id="menu-appbar"
@@ -92,7 +94,7 @@ export default function MenuAppBar() {
                 onClose={handleClose}
               >
                 <MenuItem onClick={handleClose}>Profile</MenuItem>
-            
+
 
                 <MenuItem onClick={handleClose}>My account</MenuItem>
               </Menu>

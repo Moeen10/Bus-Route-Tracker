@@ -5,6 +5,7 @@ import Home from './components/Home/Home';
 import Login from './components/Login/Login';
 import Profile from './components/Profile/Profile';
 import AddBus from './components/Admin/AddBus/addBus';
+import Payment from './components/Payment';
 // import Shop from './components/Shop/Shop';
 
 import Header from './Header/Header';
@@ -26,6 +27,9 @@ function App() {
           </Route>
           <Route path="/profile">
             <Profile />
+          </Route>
+          <Route path="/payment">
+            <Payment />
           </Route>
 
 
