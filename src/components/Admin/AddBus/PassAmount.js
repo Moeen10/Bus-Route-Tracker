@@ -16,11 +16,11 @@ export default function PassAmount(props) {
                 হাফ/পাশের পরিমাণঃ<hr />
                 নির্বাচন করুনঃ
                 <select name='half_pass_amount' className='select_btn'>
-                    <option>10%</option>
-                    <option>25%</option>
-                    <option selected>50%</option>
-                    <option>75%</option>
-                    <option>100%</option>
+                    <option value='10'>10%</option>
+                    <option value='25'>25%</option>
+                    <option value='50' selected>50%</option>
+                    <option value='75'>75%</option>
+                    <option value='100'>100%</option>
                 </select>
             </div>
         )

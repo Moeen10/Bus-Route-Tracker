@@ -6,13 +6,18 @@ import Login from './components/Login/Login';
 import Profile from './components/Profile/Profile';
 import AddBus from './components/Admin/AddBus/addBus';
 import Payment from './components/Payment';
-// import Shop from './components/Shop/Shop';
 
 import Header from './Header/Header';
 
 function App() {
   return (
     <div className="App">
+      <head>
+        <title>BUS ROUTE TRACKER</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&display=swap" rel="stylesheet" />
+      </head>
       <BrowserRouter>
         <Header />
         <Switch>
