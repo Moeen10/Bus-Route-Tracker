@@ -27,19 +27,23 @@ function App() {
           <Route path="/home">
             <Home />
           </Route>
-          <Route path="/bus">
+          <Route path="/all_bus">
             <Buses />
           </Route>
           <Route path="/profile">
             <Profile />
           </Route>
-          <Route path="/payment">
+          <Route path="/pay">
             <Payment />
           </Route>
 
 
           <Route path='/admin/addBus'>
             <AddBus />
+          </Route>
+
+          <Route path='/payment/:id'>
+            <Payment />
           </Route>
 
 

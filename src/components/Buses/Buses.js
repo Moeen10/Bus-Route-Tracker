@@ -135,10 +135,10 @@ const Buses = (props) => {
         path.push(from_num);
         path.reverse();
 
-        for (let i = 0; i < path.length; i++) {
+        /*for (let i = 0; i < path.length; i++) {
             console.log(path[i])
             console.log(num_to_string[path[i]])
-        }
+        }*/
 
 
         // search for direct bus
@@ -205,10 +205,12 @@ const Buses = (props) => {
             //console.log("complete  = " + complete)
             //console.log("bus  = " + fetched_bus[i].bus_name)
             if (complete) {
-                direct_bus.push(<SearchBus half_pass_amount={fetched_bus[i].half_pass_amount} half_pass={fetched_bus[i].half_pass} base_fair={fetched_bus[i].bus_base_fair} id={fetched_bus[i]._id} type={fetched_bus[i].bus_type} name={fetched_bus[i].bus_name} image={fetched_bus[i].bus_image} route={fetched_bus[i].route} service={fetched_bus[i].bus_service} km={km} />)
+                direct_bus.push(<SearchBus path={d} half_pass_amount={fetched_bus[i].half_pass_amount} half_pass={fetched_bus[i].half_pass} base_fair={fetched_bus[i].bus_base_fair} id={fetched_bus[i]._id} type={fetched_bus[i].bus_type} name={fetched_bus[i].bus_name} image={fetched_bus[i].bus_image} route={fetched_bus[i].route} service={fetched_bus[i].bus_service} km={km} />)
                 //console.log(d)
             }
         }
+
+
 
         // ---------------------------------------------------------------------
 
@@ -218,7 +220,7 @@ const Buses = (props) => {
             <>
                 <h1>{from} - {to}</h1>
                 <div className='container'>
-                    {direct_bus.length ? direct_bus : <h1 style={{ color: 'red' }}>No Direct Bus</h1>}
+                    {direct_bus.length ? direct_bus : <h1 style={{ color: 'red' }}>No Direct Bus Found</h1>}
                 </div>
             </>
         )

@@ -16,7 +16,7 @@ const Home = () => {
             "half_pass": "",
             "half_pass_amount": "",
             "bus_image": "",
-            "route": [["From", "To", "Distance(KM)"], ["Shukrabad", "Dhanmondi 27", "0.5"], ["Shyamoli", "Kallanpur", "1"]]
+            "route": [[]]
         }
     ]);
     const [from_where, setfrom_where] = useState("");

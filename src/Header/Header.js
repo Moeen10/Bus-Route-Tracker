@@ -59,7 +59,7 @@ export default function MenuAppBar() {
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
 
             <Link to="/home"><Button variant="primary">Home</Button>{' '}</Link>
-            <Link to="/bus"><Button variant="primary">Buses</Button>{' '}</Link>
+            <Link to="/all_bus"><Button variant="primary">Buses</Button>{' '}</Link>
             <Link to="/profile"><Button variant="primary">Profile</Button>{' '}</Link>
             <Link to="/login"><Button variant="primary">Login</Button>{' '}</Link>
             <Link to="/admin/addBus"><Button variant="primary">Add Bus</Button>{' '}</Link>
